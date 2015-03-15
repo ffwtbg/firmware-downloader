@@ -7,6 +7,8 @@ $(document).ready(function() {
         var type = '',
             fileExtension = '',
             fileEnding = '.bin',
+            siteCode = 'ffrg',
+            
             router;
         
         router = $('#download-form-router').val();
@@ -46,12 +48,10 @@ $(document).ready(function() {
                     vnumber = '0.6';
             }
 
-        
-
         if(router === '-1') {
             window.alert('Bitte wähle eine Router aus.');
         } else {
-            window.location.href = 'http://images.freifunk-ruhrgebiet.de/'+branchdir+'/'+type+'/gluon-ffruhr-'+vnumber+'-'+router+fileExtension+fileEnding;
+            window.location.href = 'http://images.freifunk-ruhrgebiet.de/'+branchdir+'/'+type+'/gluon-'+siteCode+'-'+vnumber+'-'+router+fileExtension+fileEnding;
         }
 
         return false;
