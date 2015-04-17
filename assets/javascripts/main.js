@@ -49,7 +49,7 @@ $(document).ready(function() {
             }
 
         if(router === '-1') {
-            window.alert('Bitte wähle eine Router aus.');
+            window.alert('Bitte wähle einen Router aus.');
         } else {
             window.location.href = 'http://images.freifunk-ruhrgebiet.de/'+branchdir+'/'+type+'/gluon-'+siteCode+'-'+vnumber+'-'+router+fileExtension+fileEnding;
         }
