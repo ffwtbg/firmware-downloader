@@ -4,7 +4,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Freifunk Ruhrgebiet - Firmware herunterladen</title>
+        <title>Freifunk GL im FFRL - Firmware herunterladen</title>
 
         <link rel="stylesheet" href="assets/stylesheets/reset.css">
         <link rel="stylesheet" href="assets/stylesheets/style.css">
@@ -13,12 +13,22 @@
     </head>
     <body>
         <header>
-            <img src="assets/images/freifunk_logo.png" alt="Freifunk Ruhrgebiet Firmware">
-            <h1>Freifunk Ruhrgebiet</h1>
-            <h2>Firmware Version 0.6 herunterladen</h2>
+            <img src="assets/images/freifunk_logo.png" alt="Freifunk GL Firmware">
+            <h1>Freifunk GL im FFRL</h1>
+            <h2>Firmware Version 0.6.2 herunterladen</h2>
         </header>
 
         <form class="download-form" id="download-form">
+            <select id="download-form-region">
+                <option value="-1">Bitte wähle eine Region</option>
+                <option value="bcd">Burscheid</option>
+                <option value="bgl">Bergisch Gladbach</option>
+                <option value="kut">Kürten</option>
+                <option value="lln">Leichlingen</option>
+                <option value="ode">Odenthal</option>
+                <option value="ovr">Overath</option>
+                <option value="rrh">Rösrath</option>
+            </select>
             <select id="download-form-type">
                 <option value="0">Neuinstallation der Freifunk Firmware</option>
                 <option value="1">Update der Freifunk Firmware</option>
@@ -83,7 +93,7 @@
             <!--<a class="button" href="/firmware/ffruhr-images-0.6.zip">Alle Images als ZIP herunterladen</a> -->
         </form>
         
-        <p>Die Freifunk Ruhrgebiet Firmware steht unter der <a href="http://de.wikipedia.org/wiki/GNU_General_Public_License">GPL Lizenz</a>.</p><br>
+        <p>Die Freifunk GL Firmware steht unter der <a href="http://de.wikipedia.org/wiki/GNU_General_Public_License">GPL Lizenz</a>.</p><br>
         <p>Du darfst sie somit kostenlos nutzen, studieren, ändern und verbreiten.</p>
         <br>
         <br>
