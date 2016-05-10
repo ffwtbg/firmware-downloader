@@ -9,7 +9,6 @@ $(document).ready(function() {
 
 		var	type = '',
 			fileExtension = '',
-			fileEnding = '.bin',
 			vnumber = '0.8.5-L2TP',
 			router,
 			region;
@@ -59,7 +58,7 @@ $(document).ready(function() {
 		} else if(router === '-1') {
 			window.alert('Bitte wähle einen Router aus.');
 		} else {
-			window.location.href = 'http://images.freifunk-winterberg.net/'+region+'/'+type+'/gluon-'+siteCode+'-'+vnumber+'-'+router+fileExtension+fileEnding
+			window.location.href = 'http://images.freifunk-winterberg.net/'+region+'/'+type+'/gluon-'+siteCode+'-'+vnumber+'-'+router+fileExtension
 		}
 
 		return false;
