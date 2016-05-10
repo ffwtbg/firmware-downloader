@@ -8,7 +8,8 @@ $(document).ready(function() {
 		event.preventDefault();
 
 		var	type = '',
-			fileExtension = 'void',
+			fileExtension = '',
+			fileEnding = '.bin',
 			vnumber = '0.8.5-L2TP',
 			router,
 			region;
@@ -34,15 +35,23 @@ $(document).ready(function() {
 
 		var siteCode = 'ffwtbg_' + region_short;
 		
+				if (router == 'netgear-wndr3700' || router == 'netgear-wndr3700v2' || router == 'netgear-wndr3700v4' || router == 'netgear-wndr3800' || router == 'netgear-wndr4300' || router == 'netgear-wndrmacv2' || router == 'x86-64' || router == 'x86-generic' || router == 'x86-kvm' || router == 'x86-xen'){
+					fileEnding = '.img'
+				}
+				
+				if (router == 'x86-64-virtualbox' || router == 'x86-virtualbox'){
+					fileEnding = '.vdi'
+				}				
+
+				if (router == 'x86-64-vmware' || router == 'x86-vmware'){
+					fileEnding = '.vmdk'
+				}
 
 		switch ($('#download-form-type').val()) {
 			case '0':
 				type = 'factory';
-				/* there will be more than a *.bin as a filending
-				if (router == 'netgear-wndr3700' || router == 'netgear-wndr3700' || router == 'netgear-wndr3800'){
-					fileEnding = '.img'
-				}
-				*/
+
+
 				break;
 			case '1':
 				type = 'sysupgrade';
@@ -58,7 +67,7 @@ $(document).ready(function() {
 		} else if(router === '-1') {
 			window.alert('Bitte wähle einen Router aus.');
 		} else {
-			window.location.href = 'http://images.freifunk-winterberg.net/'+region+'/'+type+'/gluon-'+siteCode+'-'+vnumber+'-'+router
+			window.location.href = 'http://images.freifunk-winterberg.net/'+region+'/'+type+'/gluon-'+siteCode+'-'+vnumber+'-'+router+fileExtension+fileEnding
 		}
 
 		return false;
