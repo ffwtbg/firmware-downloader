@@ -10,7 +10,7 @@ $(document).ready(function() {
 		var	type = '',
 			fileExtension = '',
 			fileEnding = '.bin',
-			vnumber = '0.8.5-L2TP',
+			vnumber = '0.8.6',
 			router,
 			region;
 		router = $('#download-form-router').val();
