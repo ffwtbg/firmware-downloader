@@ -1,3 +1,4 @@
+var versioncode;
 
 $(document).ready(function() {
 	if(window.location.search != "") {
@@ -10,7 +11,7 @@ $(document).ready(function() {
 		var	type = '',
 			fileExtension = '',
 			fileEnding = '.bin',
-			vnumber = '0.8.7-mts',
+			vnumber = versioncode,
 			router,
 			region;
 		router = $('#download-form-router').val();
