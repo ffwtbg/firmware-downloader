@@ -33,6 +33,14 @@ $(document).ready(function() {
 			{
 				region_short = 'hlb';
 			}
+		if (region == 'hoehendoerfer')
+			{
+				region_short = 'HD';
+			}
+		if (region == 'siedlinghausen')
+			{
+				region_short = 'sdl';
+			}
 
 		var siteCode = 'ffwtbg_' + region_short;
 		

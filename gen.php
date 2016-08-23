@@ -15,7 +15,7 @@
 
 // ### CONFIG ###########
 
-$path 					= "/var/www/html/firmware/winterberg_doerfer";		// reference folder
+$path 					= "/var/www/html/firmware/firmware_manuell/winterberg_doerfer";		// reference folder
 $routerlistfilename 	= "routerlist.txt";
 $referencemodel 		= "tp-link-tl-wr841n-nd-v9";						// reference model in reference folder
 
