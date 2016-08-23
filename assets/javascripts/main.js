@@ -76,7 +76,7 @@ $(document).ready(function() {
 		} else if(router === '-1') {
 			window.alert('Bitte wähle einen Router aus.');
 		} else {
-			window.location.href = 'http://images.freifunk-winterberg.net/'+region+'/'+type+'/gluon-'+siteCode+'-'+vnumber+'-'+router+fileExtension+fileEnding
+			window.location.href = 'https://images.freifunk-winterberg.net/'+region+'/'+type+'/gluon-'+siteCode+'-'+vnumber+'-'+router+fileExtension+fileEnding
 		}
 
 		return false;
