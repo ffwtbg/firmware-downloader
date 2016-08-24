@@ -24,8 +24,8 @@
                 <option value="winterberg_doerfer">Winterberg Doerfer</option>
                 <option value="medebach">Medebach</option>
                 <option value="hallenberg">Hallenberg</option>
-		<option value="hoehendoerfer">Höhendörfer</option>
-		<option value="siedlinghausen">Siedlinghausen</option>
+		<option value="winterberg_hoehendoerfer">Höhendörfer</option>
+		<option value="siedlinghausen_silbach">Siedlinghausen</option>
             </select>
             <select id="download-form-type">
                 <option value="0">Neuinstallation der Freifunk Firmware</option>
