@@ -33,11 +33,11 @@ $(document).ready(function() {
 			{
 				region_short = 'hlb';
 			}
-		if (region == 'hoehendoerfer')
+		if (region == 'winterberg_hoehendoerfer')
 			{
-				region_short = 'HD';
+				region_short = 'hd';
 			}
-		if (region == 'siedlinghausen')
+		if (region == 'siedlinghausen_silbach')
 			{
 				region_short = 'sdl';
 			}
