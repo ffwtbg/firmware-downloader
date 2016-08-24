@@ -39,7 +39,7 @@ $(document).ready(function() {
 			}
 		if (region == 'siedlinghausen_silbach')
 			{
-				region_short = 'sdl';
+				region_short = 'sdlh';
 			}
 
 		var siteCode = 'ffwtbg_' + region_short;
